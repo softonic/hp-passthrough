@@ -8,4 +8,4 @@ FROM scratch
 
 COPY --from=build /go/src/github.com/softonic/hp-passthrough/bin/hp-passthrough /
 
-ENTRYPOINT ["/hp-passthrough"]
+ENTRYPOINT ["/hp-passthrough", "-logtostderr"]
