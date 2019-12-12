@@ -20,3 +20,6 @@ All the [Homing pigeon](https://github.com/softonic/homing-pigeon) middlewares m
 The middleware receives a `github.com/softonic/homing-pigeon/middleware` message as request in the `IN_SOCKET`, so you can
 modify the input data to send it to the next middlewares. After the next middlewares are executed, it intercepts the response
 so it can be modified again before it is finally returned.
+
+The main homing-pigeon package come with an `UnimplementedMiddleware` to allow you to implement just the middleware bussiness logic. If you need
+more control, you can implement your middleware from scratch. Take a look at `UnimplementedMiddleware` to know the basic implementation.
