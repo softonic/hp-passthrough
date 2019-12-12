@@ -23,3 +23,7 @@ so it can be modified again before it is finally returned.
 
 The main homing-pigeon package come with an `UnimplementedMiddleware` to allow you to implement just the middleware bussiness logic. If you need
 more control, you can implement your middleware from scratch. Take a look at `UnimplementedMiddleware` to know the basic implementation.
+
+### Usage
+
+You just need to execute the binary or use docker to automatically run it. If you want to show some logging in the output, you can use the [kglog](https://github.com/kubernetes/klog) flags in the command.
