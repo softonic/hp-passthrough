@@ -6,6 +6,6 @@ RUN cd /go/src/github.com/softonic/hp-passthrough && make build
 
 FROM scratch
 
-COPY --from=build /go/src/github.com/softonic/homing-pigeon/bin/hp-passthrough /
+COPY --from=build /go/src/github.com/softonic/hp-passthrough/bin/hp-passthrough /
 
 ENTRYPOINT ["/hp-passthrough"]

@@ -10,3 +10,9 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+
+# Never ignore gitkeep files
+!.gitignore
+
+# Ignoring generated files
+bin
