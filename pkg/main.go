@@ -2,16 +2,16 @@ package main
 
 import (
 	"context"
-	pb "github.com/softonic/homing-pigeon/middleware"
 	"github.com/softonic/homing-pigeon/pkg/middleware"
+	"github.com/softonic/homing-pigeon/proto"
 	"log"
 )
 
 type PassthroughMiddleware struct {
-	middleware.Base
+	middleware.UnimplementedMiddleware
 }
 
-func (m *PassthroughMiddleware) Handle(ctx context.Context, req *pb.Data) (*pb.Data, error) {
+func (m *PassthroughMiddleware) Handle(ctx context.Context, req *proto.Data) (*proto.Data, error) {
 
 	// Do things with the INPUT data
 	log.Printf("Pre-Processing %v", *req)
