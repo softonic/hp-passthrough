@@ -1,5 +1,5 @@
 dist: bionic
-
+sudo: false
 language: go
 
 env: GO111MODULE=on GOFLAGS='-mod vendor'
